@@ -92,8 +92,8 @@ RUN set -ex; \
     #sudo pip3 install -Iv wheel meson==0.54.3;	\
     sudo pip3 install meson;    \
     mkdir /build; \
-    git config --global http.proxy 'http://10.10.18.125:7890';  \
-    git config --global https.proxy 'http://10.10.18.125:7890'; \
+    #git config --global http.proxy 'http://10.10.18.125:7890';  \
+    #git config --global https.proxy 'http://10.10.18.125:7890'; \
     export GO111MODULE=on;  \
     export GOPROXY=https://goproxy.cn;  \
     git clone --branch $JANUS_VERSION https://github.com/meetecho/janus-gateway.git /build/janus-gateway; \
